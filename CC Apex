@@ -1,0 +1,38 @@
+Main
+public class Demol (
+public void CreateAccount (String Name, String Phone) { account acc = new account();
+acc.Name = Name;
+acc.Phone= Phone:
+insert acc;
+System.debug('Account has been inserted: + acc.name);
+}}
+Demol acc=new Demol(); acc.CreateAccount ( 'Prachi', '763849020');
+
+Update
+public class Demo2 {
+
+public void UpdateOlderAccount (String Name) {
+
+List<Account> oldAccounts = new List<Account>();
+
+for (Account acc: [SELECT Name from Account WHERE Phone='785323674'])}
+acc.Name =Name; 
+oldAccounts.add(acc);
+
+System.debug('Account has been 'updated + acc.name);
+}
+update oldAccounts;}}
+Demo2 acc=new Demo2(); acc.UpdateOlderAccount ( 'Rutu');
+
+
+Delete
+public class Demo3 (
+
+public void DeleteAccount() {
+List<Account> oldAccounts = new List<Account>(); 
+for (Account acc: [select Name, Phone from Account where Name='Smita'])
+{ delete acc; System.debug('Account deleted: '+acc.name);
+}
+update oldAccounts;
+}}
+Demo3 acc = new Demo3(); acc.DeleteAccount();
