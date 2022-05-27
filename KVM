@@ -1,0 +1,7 @@
+sudo kvm-ok
+sudo apt install cpu-checker
+sudo apt update 
+sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients bridge-util
+virsh list –all
+sudo apt install virt-manager
+sudo virt-manager
